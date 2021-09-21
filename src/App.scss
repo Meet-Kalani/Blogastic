@@ -1,0 +1,777 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+$primaryColor: #eff0f0;
+$secondaryColor: white;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button{
+  cursor:pointer;
+}
+
+textarea{
+  padding:10px;
+}
+
+body {
+  background-color: $primaryColor;
+  overflow-x:hidden;
+  font-family: 'Raleway', sans-serif;
+  input,textarea{
+    font-family: 'Raleway', sans-serif;
+  }
+  main {
+    #splitter {
+      display: flex;
+      justify-content: space-between;
+      .split-1,
+      .split-3 {
+        flex: 1;
+      }
+      .split-2 {
+        flex: 3;
+        height: 100%;
+        margin-bottom: 50px;
+      }
+    }
+
+    .feedHeader {
+      h3 {
+        margin: 20px;
+      }
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $secondaryColor;
+      width: 100%;
+      padding: 0 40px;
+      .logo{
+        display:flex;
+        align-items:center;
+        img{
+          width:50px;
+        }
+        a{
+          text-decoration: none;
+        }
+      }
+      div {
+        height: 100%;
+        width: 100%;
+      }
+      .searchBar {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        input {
+          border: 2px solid #99a3ad;
+          border-radius: 5px;
+          padding: 10px;
+          margin: 10px 0;
+          width: 450px;
+        }
+        button {
+          padding: 0;
+          border: none;
+          border-radius: 100%;
+          background: none;
+          cursor: pointer;
+          margin-left: 5px;
+          img {
+            height: 30px;
+          }
+        }
+      }
+      .signupBtn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .btn {
+          padding: 10px 15px;
+          background-color: rgb(113, 25, 214);
+          color: $secondaryColor;
+          border: none;
+          border-radius: 5px;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    #navbar{
+      top:0;
+      position:sticky;
+      width: 100%;
+    }
+
+    .down-arrow-icon {
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      img {
+        width: 40px;
+      }
+    }
+
+    .navbar {
+      background-color: rgb(113, 25, 214);
+      padding: 15px 0;
+      .searchBar {
+        display: none;
+      }
+      ul {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: $secondaryColor;
+        }
+      }
+    }
+
+    #tagsSection {
+      display: block;
+      margin: 20px;
+      a {
+        text-decoration: none;
+      }
+      h3 {
+        margin-bottom: 20px;
+      }
+      img {
+        display: none;
+      }
+    }
+
+    #feedSection {
+      width: 100%;
+      margin-left:auto;
+      margin-right:auto;
+      background-color: $secondaryColor;
+      cursor: pointer;
+      margin-bottom: 20px;
+      padding: 30px 30px 20px 30px;
+      border-radius: 5px;
+      .d-flex {
+        display: flex;
+        justify-content: space-between;
+        img {
+          width: 50px;
+        }
+      }
+
+      .feedBy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+          border-radius: 5px;
+          margin-right: 10px;
+        }
+      }
+
+      .feedTitle {
+        margin-top: 20px;
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      .feedTags {
+        margin-top: 20px;
+        .tag {
+          margin-right: 10px;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .feedFromSearch{
+      width: 70%;
+      margin-left:auto;
+      margin-right: auto;
+    }
+
+    #login {
+      height: 70vh;
+      .loginHeader {
+        margin: 20px auto;
+        width: 70px;
+      }
+      .loginForm {
+        background-color: $secondaryColor;
+        border-radius: 5px;
+        width: 400px;
+        padding: 40px 20px;
+        margin: 0 auto;
+        input {
+          width: 100%;
+          padding: 7px;
+          margin-bottom: 20px;
+          border: 2px solid #99a3ad;
+          border-radius: 5px;
+        }
+        .d-flex {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          button {
+            padding: 10px 15px;
+            background-color: rgb(113, 25, 214);
+            color: $secondaryColor;
+            border: none;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    #signup {
+      height: 70vh;
+      .signupHeader {
+        margin: 20px auto;
+        width: 70px;
+      }
+      .signupForm {
+        background-color: $secondaryColor;
+        border-radius: 5px;
+        width: 400px;
+        padding: 40px 20px;
+        margin: 0 auto;
+        input {
+          width: 100%;
+          padding: 7px;
+          margin-bottom: 20px;
+          border: 2px solid #99a3ad;
+          border-radius: 5px;
+        }
+        .d-flex {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          button {
+            padding: 10px 15px;
+            background-color: rgb(113, 25, 214);
+            color: $secondaryColor;
+            border: none;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    #blog {
+      margin-left: auto;
+      margin-right: auto;
+      height: 100%;
+      width: 800px;
+      background-color: $secondaryColor;
+      border-radius: 5px;
+      padding: 30px;
+      margin-top: 62px;
+      margin-bottom: 70px;
+      img {
+        width: 740px;
+        border-radius: 5px;
+      }
+      .blogBy {
+        margin: 50px 0;
+      }
+      .blogData {
+        div{
+          h2 {
+            margin: 30px 0;
+          }
+        }
+      }
+
+      hr {
+        margin-top: 20px;
+      }
+
+      .blogComment {
+        margin: 30px 0;
+        h3 {
+          margin-bottom: 5px;
+        }
+        button {
+          padding: 0 20px 0 10px;
+          border: none;
+          background-color: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 30px;
+          }
+        }
+
+        .comment {
+          margin-top: 25px;
+          border: 1px solid #99a3ad;
+          border-radius: 5px;
+          padding: 10px;
+          .d-flex {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            img {
+              width: 30px;
+            }
+            .commentText {
+              margin-top: 50px;
+            }
+          }
+        }
+
+        .sendComment {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          input {
+            width: 100%;
+            padding: 7px;
+            border: 2px solid #99a3ad;
+            border-radius: 5px;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+
+    #createBlogCTA {
+      background-color: $secondaryColor;
+      margin: 62px auto 0 auto;
+      border-radius: 5px;
+      padding: 10px 10px 20px 10px;
+      width: 90%;
+      h3 {
+        margin-bottom: 40px;
+      }
+      a {
+        padding: 10px 15px;
+        background-color: rgb(113, 25, 214);
+        color: $secondaryColor;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+    }
+
+    #createBlog {
+      width: 60%;
+      margin: 0 auto;
+      h3 {
+        text-align: center;
+        margin: 20px 0;
+      }
+      form {
+        background-color: $secondaryColor;
+        padding: 30px;
+        border-radius: 5px;
+        div {
+          margin: 15px 0;
+          input,
+          textarea {
+            width: 100%;
+            padding: 7px;
+            border: 2px solid #99a3ad;
+            border-radius: 5px;
+            margin-top: 5px;
+          }
+          .imageInput {
+            border: none;
+            padding: 0;
+          }
+          textarea {
+            height: 250px;
+            padding: 7px 0 7px 0;
+          }
+          button {
+            padding: 10px 15px;
+            background-color: rgb(113, 25, 214);
+            color: $secondaryColor;
+            border: none;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    #dashboard {
+      width: 60%;
+      height: 100%;
+      margin: 0 auto;
+      margin-bottom: 70px;
+      .feedHeader {
+        display: flex;
+        align-items: center;
+        h3 {
+          margin: 20px;
+        }
+        a {
+          padding: 10px 15px;
+          background-color: rgb(113, 25, 214);
+          color: $secondaryColor;
+          border: none;
+          border-radius: 5px;
+          margin: 20px 20px 10px auto;
+          text-decoration: none;
+        }
+      }
+      .btn-d-flex {
+        display: flex;
+        justify-content: flex-end;
+        button {
+          padding: 10px 15px;
+          margin-left: 10px;
+          background-color: rgb(113, 25, 214);
+          color: $secondaryColor;
+          border: none;
+          cursor:pointer;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    #editBlog {
+      width: 60%;
+      height: 100%;
+      margin: 0 auto;
+      margin-bottom: 70px;
+      h3 {
+        text-align: center;
+        margin: 20px 0;
+      }
+      form {
+        background-color: $secondaryColor;
+        padding: 30px;
+        border-radius: 5px;
+        div {
+          margin: 15px 0;
+          input,
+          textarea {
+            width: 100%;
+            padding: 7px;
+            border: 2px solid #99a3ad;
+            border-radius: 5px;
+            margin-top: 5px;
+          }
+          .imageInput {
+            border: none;
+            padding: 0;
+          }
+          textarea {
+            height: 250px;
+            padding: 7px 0 7px 0;
+          }
+          button {
+            padding: 10px 15px;
+            background-color: rgb(113, 25, 214);
+            color: $secondaryColor;
+            border: none;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    #profile {
+      margin-left: auto;
+      margin-right: auto;
+      width: 800px;
+      margin-bottom: 10%;
+      background-color: $secondaryColor;
+      border-radius: 5px;
+      padding: 30px;
+      margin-top: 62px;
+      .imgContainer {
+        display: flex;
+        justify-content: center;
+        img {
+          border-radius: 100%;
+          width: 150px;
+          height: auto;
+        }
+      }
+      .info {
+        width: 100%;
+        text-align: center;
+        .d-flex {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        img {
+          width: 30px;
+          margin-right: 10px;
+        }
+        h3 {
+          margin: 10px 0;
+        }
+        p {
+          margin: 10px 0;
+        }
+        button {
+          padding: 10px 15px;
+          background-color: rgb(113, 25, 214);
+          color: $secondaryColor;
+          border: none;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    #editProfile {
+      width: 60%;
+      height:100%;
+      margin: 0 auto;
+      margin-bottom: 70px;
+      h3 {
+        margin: 20px;
+      }
+      form {
+        background-color: $secondaryColor;
+        padding: 30px;
+        border-radius: 5px;
+        div {
+          margin: 15px 0;
+          input,
+          textarea {
+            width: 100%;
+            padding: 7px;
+            border: 2px solid #99a3ad;
+            border-radius: 5px;
+            margin-top: 5px;
+          }
+          .imageInput {
+            border: none;
+            padding: 0;
+          }
+          textarea {
+            height: 250px;
+            padding: 7px 0 7px 0;
+          }
+          button {
+            padding: 10px 15px;
+            background-color: rgb(113, 25, 214);
+            color: $secondaryColor;
+            border: none;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    #contact {
+      width: 60%;
+      margin: 0 auto;
+      margin-bottom: 70px;
+      height: 100%;
+      h3 {
+        margin: 20px;
+      }
+      span{
+        font-size:small;
+        color:rgb(200, 49, 49)
+      }
+      form {
+        background-color: $secondaryColor;
+        padding: 30px;
+        border-radius: 5px;
+        div {
+          margin: 15px 0;
+          input,
+          textarea {
+            width: 100%;
+            padding: 7px;
+            border: 2px solid #99a3ad;
+            border-radius: 5px;
+            margin-top: 5px;
+          }
+          .imageInput {
+            border: none;
+            padding: 0;
+          }
+          textarea {
+            height: 250px;
+            padding: 7px 0 7px 0;
+          }
+          button {
+            padding: 10px 15px;
+            background-color: rgb(113, 25, 214);
+            color: $secondaryColor;
+            border: none;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    #error {
+      height: 70vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      span {
+        border-bottom: 2px solid #99a3ad;
+      }
+    }
+
+    #footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 15px 0;
+      width: 100%;
+      text-align: center;
+      background-color: rgb(113, 25, 214);
+      color: $secondaryColor;
+      span {
+        cursor: pointer;
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    main {
+      #splitter {
+        flex-direction: column;
+        #feedSection {
+          width: 90% !important;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .feedFromSearch{
+          width:90%;
+        }
+        .feedHeader {
+          margin-left: 4%;
+        }
+        .split-1 {
+          margin-left: auto;
+          text-align: right;
+        }
+
+        .split-3{
+          // padding-bottom: 100px;
+          margin-bottom: 100px;
+        }
+
+        #tagsSection {
+          display: none;
+        }
+      }
+
+      .feedFromSearch{
+        width: 90%;
+      }
+
+      nav {
+        padding: 20px;
+        .searchBar {
+          display: none;
+        }
+      }
+
+      .down-arrow-icon {
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        img {
+          width: 40px;
+        }
+      }
+
+      .navbar {
+        ul {
+          display: block;
+          width: 100%;
+          text-align: center;
+          li {
+            margin: 10px 0;
+          }
+        }
+        .searchBar {
+          width: 90%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: auto;
+          margin-right: auto;
+          input {
+            border: 2px solid #99a3ad;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            width: 450px;
+          }
+          button {
+            padding: 0;
+            border: none;
+            border-radius: 100%;
+            background: none;
+            cursor: pointer;
+            margin-left: 5px;
+            img {
+              height: 30px;
+            }
+          }
+        }
+      }
+
+      #dashboard {
+        width: 90%;
+        height: 80vh;
+        .btn-d-flex {
+          margin-top: 20px;
+        }
+      }
+
+      #editProfile,
+      #contact,
+      #editBlog,
+      #blog,
+      #createBlog,
+      #profile {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+
+      #login {
+        .loginForm {
+          width: 90%;
+        }
+      }
+
+      #signup {
+        .signupForm {
+          width: 90%;
+        }
+      }
+
+      #blog {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
