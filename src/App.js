@@ -19,7 +19,7 @@ import axios from "axios";
 import { Switch, Route, useHistory } from "react-router-dom";
 
 const App = () => {
-  const baseURL = "http://localhost:5000";
+  const baseURL = "https://blogastic.herokuapp.com";
   const history = useHistory();
   const [blogs, setBlogs] = useState([]);
   const [blog, setBlog] = useState({});
