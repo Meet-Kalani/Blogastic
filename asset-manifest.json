@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Blogastic/static/css/main.f0852192.chunk.css",
-    "main.js": "/Blogastic/static/js/main.dec4c3fd.chunk.js",
-    "main.js.map": "/Blogastic/static/js/main.dec4c3fd.chunk.js.map",
-    "runtime-main.js": "/Blogastic/static/js/runtime-main.515671cf.js",
-    "runtime-main.js.map": "/Blogastic/static/js/runtime-main.515671cf.js.map",
-    "static/js/2.3442327d.chunk.js": "/Blogastic/static/js/2.3442327d.chunk.js",
-    "static/js/2.3442327d.chunk.js.map": "/Blogastic/static/js/2.3442327d.chunk.js.map",
+    "main.css": "/Blogastic/static/css/main.80c45c8e.chunk.css",
+    "main.js": "/Blogastic/static/js/main.2da21794.chunk.js",
+    "main.js.map": "/Blogastic/static/js/main.2da21794.chunk.js.map",
+    "runtime-main.js": "/Blogastic/static/js/runtime-main.e399459f.js",
+    "runtime-main.js.map": "/Blogastic/static/js/runtime-main.e399459f.js.map",
+    "static/js/2.0c499b79.chunk.js": "/Blogastic/static/js/2.0c499b79.chunk.js",
+    "static/js/2.0c499b79.chunk.js.map": "/Blogastic/static/js/2.0c499b79.chunk.js.map",
     "index.html": "/Blogastic/index.html",
-    "static/css/main.f0852192.chunk.css.map": "/Blogastic/static/css/main.f0852192.chunk.css.map",
-    "static/js/2.3442327d.chunk.js.LICENSE.txt": "/Blogastic/static/js/2.3442327d.chunk.js.LICENSE.txt"
+    "static/css/main.80c45c8e.chunk.css.map": "/Blogastic/static/css/main.80c45c8e.chunk.css.map",
+    "static/js/2.0c499b79.chunk.js.LICENSE.txt": "/Blogastic/static/js/2.0c499b79.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.515671cf.js",
-    "static/js/2.3442327d.chunk.js",
-    "static/css/main.f0852192.chunk.css",
-    "static/js/main.dec4c3fd.chunk.js"
+    "static/js/runtime-main.e399459f.js",
+    "static/js/2.0c499b79.chunk.js",
+    "static/css/main.80c45c8e.chunk.css",
+    "static/js/main.2da21794.chunk.js"
   ]
 }
